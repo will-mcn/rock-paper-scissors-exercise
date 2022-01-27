@@ -1,13 +1,16 @@
 # this is the "game.py" file
-print("Rock, Paper, Scissors, Shoot!")
+print("Welcome to the game - Rock, Paper, Scissors, Shoot!")
 
 print("-------------------")
 
 # Ask for User Input 
 user_choice = input("rock, paper, or scissors? ")
-print(user_choice)
+
+print("Player has chosen:", user_choice)
+
 
 # Validations
+
 
 
 
