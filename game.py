@@ -16,7 +16,9 @@ print("Player has chosen:", user_choice)
 answer_list = ["rock", "paper", "scissors"]
 user_choice = user_choice.lower()
 if user_choice not in answer_list:
-    print("invalid entry, please try again") and quit()
+    print("-------------------")
+    print("invalid entry, please try again")
+    quit()
     
 # Computer Choice
 computer_responses = ["rock", "paper", "scissors"]
@@ -26,11 +28,25 @@ print("Computer has chosen:", computer_choice )
 
 
 # Determine the Winner
-if user_choice == answer_list[1] and computer_choice == answer_list[1]: 
-    print("Rock vs Rock. The game is a tie!")
-elif user_choice == answer_list[1] and computer_choice == answer_list[2]:
-    print("Paper beats Rock. Computer wins!")
-elif
+if user_choice == computer_choice: 
+    print(f"Both players selected {user_choice}. Its a tie!")
+elif user_choice == "rock":
+    if computer_choice == "paper":
+        print("Paper covers rock. Computer wins!")
+    else: 
+        print("Rock crushes scissors. User wins!")
+elif user_choice == "paper":
+    if computer_choice == "rock":
+        print("Paper covers rock. User wins!")
+    else:
+        print("Scissors cut paper. Computer wins!")
+elif user_choice == "scissors":
+    if computer_choice == "rock":
+        print("Rock crushes scissors. Computer wins!")
+    else:
+        print("Scissors cut paper. User wins!")
+
+
 
 
 
