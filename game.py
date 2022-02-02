@@ -1,15 +1,20 @@
 # this is the "game.py" file
 from random import random
 
+import os 
+player_name = os.getenv("PLAYER_NAME", default="Player One")
+    
+print("-------------------")
 
-print("Welcome to the game - Rock, Paper, Scissors, Shoot!")
+print(f"Welcome {player_name} to the game - Rock, Paper, Scissors, Shoot!")
 
 print("-------------------")
 
 # Ask for User Input 
+
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
-print("Player has chosen:", user_choice)
+print("You chose:", user_choice)
 
 
 # Validations
@@ -19,17 +24,20 @@ if user_choice not in answer_list:
     print("invalid entry, please try again")
     quit()
 
-print("-------------------")
     
 # Computer Choice
+# https://docs.python.org/3/library/random.html
+# https://github.com/prof-rossetti/intro-to-python/blob/main/notes/python/modules/random.m
+
 computer_responses = ["rock", "paper", "scissors"]
 import random
 computer_choice = random.choice(computer_responses)
-print("Computer has chosen:", computer_choice )
+print("Computer chose:", computer_choice )
 
 print("-------------------")
 
 # Determine the Winner
+# Winner determination by using a nested if statement
 if user_choice == computer_choice: 
     print(f"Both players selected {user_choice}. Its a tie!")
 elif user_choice == "rock":
@@ -47,10 +55,7 @@ elif user_choice == "scissors":
         print("Rock crushes scissors. Computer wins!")
     else:
         print("Scissors cut paper. User wins!")
-print("Thanks for playing. Please play again!")
 
 
-
-
-
-# Final Results
+# Final Message
+print("Thank you for playing. Please play another round soon!")
