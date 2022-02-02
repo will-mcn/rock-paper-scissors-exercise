@@ -7,7 +7,7 @@ print("Welcome to the game - Rock, Paper, Scissors, Shoot!")
 print("-------------------")
 
 # Ask for User Input 
-user_choice = input("rock, paper, or scissors? ")
+user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
 print("Player has chosen:", user_choice)
 
@@ -16,9 +16,10 @@ print("Player has chosen:", user_choice)
 answer_list = ["rock", "paper", "scissors"]
 user_choice = user_choice.lower()
 if user_choice not in answer_list:
-    print("-------------------")
     print("invalid entry, please try again")
     quit()
+
+print("-------------------")
     
 # Computer Choice
 computer_responses = ["rock", "paper", "scissors"]
@@ -26,6 +27,7 @@ import random
 computer_choice = random.choice(computer_responses)
 print("Computer has chosen:", computer_choice )
 
+print("-------------------")
 
 # Determine the Winner
 if user_choice == computer_choice: 
@@ -45,6 +47,7 @@ elif user_choice == "scissors":
         print("Rock crushes scissors. Computer wins!")
     else:
         print("Scissors cut paper. User wins!")
+print("Thanks for playing. Please play again!")
 
 
 
