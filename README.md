@@ -1,30 +1,46 @@
 # rock-paper-scissors-exercise
 RPS Exercise from OPIM 243
-# rock-paper-scissors-exercise
-RPS Exercise from OPIM 243
-# Rock Paper Scissors Game
 
-## Prerequisites
+## Rock Paper Scissors Game
+
+# Prerequisites
 + Anaconda 3.7+
   + Python 3.7+
   + Pip
 
-# Setup
-Clone and download the repository (insert link here) onto your local computer. Then navigate to the repository wherever it has been saved down.
+# Setup & Virtual Environment
+Clone and download the repository (insert link here) onto your local computer.
 
-Potentially insert a 
-
-# Playing the Game
-In order to start the game, navigate to the repository on your terminal. 
-For example: 
+On your terminal and the command line, navigate to the newly downloaded repository: 
 
 ```
 cd ~/Desktop/rock-paper-scissors-exercise
 ```
+Once in the repository, create and activate a project-specific virtual environment:
+```
+conda create -n RPS-game-env python=3.8
+conda activate RPS-game-env
+```
 
-To start the game, enter the following code into the terminal:
+## Playing the Game
+
+To start the game:
 
 ```
-PLAYER_NAME = "Your Name" python game.py
+PLAYER_NAME = "PLAYER_NAME" python game.py
 ```
-This sequences passes an environment variable, PLAYER_NAME, to the script so that you may be addressed by your desired name. It also initiates the games start proceedures.
+
+This sequence passes an environment variable, PLAYER_NAME, so that you may customize your desired name throuhgout the program. If not passed, you will simply be 'Player One'. This also initiates the start of the game.
+
+You will be prompted to select between 'rock', 'paper', or 'scissors'. Any capitalization or format of the words (i.e., rock, ROCK, Rock) will work as a valid input. Anything outside of these options will cause the game to quit, and the start sequence will need to be repeated. 
+
+### Winner Determination
+
+As a refresher, the following relationships dicate a win, loss or tie in rock paper scissors: 
+1. rock crushes scissors
+2. scissors cuts paper
+3. paper covers rock 
+4. rock and rock, scissors and scissors, paper and paper all result in a tie
+
+
+With the player's input, the computer will make a random corresponding selection and the outcome of the game (win, loss, or tie) will be displayed. 

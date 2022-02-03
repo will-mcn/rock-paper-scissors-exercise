@@ -1,9 +1,9 @@
 # this is the "game.py" file
-from random import random
 
-import os 
+# Player Name Customization & Welcome Message
+import os
 player_name = os.getenv("PLAYER_NAME", default="Player One")
-    
+
 print("-------------------")
 
 print(f"Welcome {player_name} to the game - Rock, Paper, Scissors, Shoot!")
@@ -11,13 +11,12 @@ print(f"Welcome {player_name} to the game - Rock, Paper, Scissors, Shoot!")
 print("-------------------")
 
 # Ask for User Input 
-
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
-print("You chose:", user_choice)
+print(f"{player_name} chose:", user_choice)
 
 
-# Validations
+# Validation of User Input
 answer_list = ["rock", "paper", "scissors"]
 user_choice = user_choice.lower()
 if user_choice not in answer_list:
@@ -44,18 +43,18 @@ elif user_choice == "rock":
     if computer_choice == "paper":
         print("Paper covers rock. Computer wins!")
     else: 
-        print("Rock crushes scissors. User wins!")
+        print(f"Rock crushes scissors. {player_name} wins!")
 elif user_choice == "paper":
     if computer_choice == "rock":
-        print("Paper covers rock. User wins!")
+        print(f"Paper covers rock. {player_name} wins!")
     else:
         print("Scissors cut paper. Computer wins!")
 elif user_choice == "scissors":
     if computer_choice == "rock":
         print("Rock crushes scissors. Computer wins!")
     else:
-        print("Scissors cut paper. User wins!")
+        print(f"Scissors cut paper. {player_name} wins!")
 
 
 # Final Message
-print("Thank you for playing. Please play another round soon!")
+print(f"Thank you, {player_name} for playing. Please come play another round soon!")
