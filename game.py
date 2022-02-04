@@ -34,7 +34,7 @@ print("Computer chose:", computer_choice )
 print("-------------------")
 
 # Determine the Winner
-# Winner determination by using a nested if statement
+# Winner determination by using a nested if statement testing user vs. computer choices
 
 if user_choice == computer_choice: 
     print(f"Both players selected {user_choice}. Its a tie!")
@@ -53,7 +53,6 @@ elif user_choice == "scissors":
         print("Rock crushes scissors. Computer wins!")
     else:
         print(f"Scissors cut paper. {player_name} wins!")
-
 
 # Final Message
 print(f"Thank you, {player_name} for playing. Please come play another round soon!")
