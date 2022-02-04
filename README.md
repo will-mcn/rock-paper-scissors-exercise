@@ -42,3 +42,5 @@ As a refresher, the following relationships dicate a win, loss, or tie in rock p
 4. rock and rock, scissors and scissors, paper and paper all result in a tie
 
 With the player's input, the computer will make a random corresponding selection and the outcome of the game (win, loss, or tie) will be displayed. 
+
+Good luck and happy playing!
