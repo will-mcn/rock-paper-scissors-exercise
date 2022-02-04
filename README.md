@@ -29,9 +29,9 @@ To start the game:
 PLAYER_NAME="PLAYER_NAME" python game.py
 ```
 
-This sequence passes an environment variable, PLAYER_NAME, so that you may customize your desired name throuhgout the program. If not customized as in the above, you will simply be 'Player One'. This also initiates the start of the game.
+This sequence passes an environment variable, PLAYER_NAME, so that you may customize your desired name throughout the program. If not customized as in the above, you will simply be 'Player One'. This also initiates the start of the game.
 
-You will be prompted to select between 'rock', 'paper', or 'scissors'. Any capitalization or format of the words (i.e., rock, ROCK, Rock) will work as a valid input. Anything outside of these options will cause the game to quit, and the start sequence will need to be repeated. 
+You will be prompted to select between 'rock', 'paper', or 'scissors' and type the input into the command line. Any capitalization or format of the words (i.e., rock, ROCK, Rock) will work as a valid input. Anything outside of these options will cause the game to quit, and the start sequence will need to be repeated. 
 
 ### Winner Determination
 
