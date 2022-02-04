@@ -15,14 +15,12 @@ user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
 print(f"{player_name} chose:", user_choice)
 
-
 # Validation of User Input
 answer_list = ["rock", "paper", "scissors"]
 user_choice = user_choice.lower()
 if user_choice not in answer_list:
     print("invalid entry, please try again")
     quit()
-
     
 # Computer Choice
 # https://docs.python.org/3/library/random.html
@@ -37,6 +35,7 @@ print("-------------------")
 
 # Determine the Winner
 # Winner determination by using a nested if statement
+
 if user_choice == computer_choice: 
     print(f"Both players selected {user_choice}. Its a tie!")
 elif user_choice == "rock":
