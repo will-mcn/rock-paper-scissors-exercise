@@ -1,13 +1,13 @@
 # rock-paper-scissors-exercise
 RPS Exercise from OPIM 243
 
-## Rock Paper Scissors Game
+# Rock Paper Scissors Game
 
-# Prerequisites
+## Prerequisites
 + Anaconda 3.7+
 + Python 3.7+
 
-# Setup & Virtual Environment
+## Setup & Virtual Environment
 Clone and download the repository (https://github.com/will-mcn/rock-paper-scissors-exercise) onto your local computer.
 
 On your terminal and the command line, navigate to the newly downloaded repository: 
@@ -26,7 +26,7 @@ conda activate RPS-game-env
 To start the game:
 
 ```
-PLAYER_NAME = "PLAYER_NAME" python game.py
+PLAYER_NAME="PLAYER_NAME" python game.py
 ```
 
 This sequence passes an environment variable, PLAYER_NAME, so that you may customize your desired name throuhgout the program. If not customized as in the above, you will simply be 'Player One'. This also initiates the start of the game.
