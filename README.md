@@ -6,7 +6,6 @@ RPS Exercise from OPIM 243
 # Prerequisites
 + Anaconda 3.7+
   + Python 3.7+
-  + Pip
 
 # Setup & Virtual Environment
 Clone and download the repository (insert link here) onto your local computer.
